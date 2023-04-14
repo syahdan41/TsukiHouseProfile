@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Syne";
+  src: url("/public/fonts/static/Syne-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Visby CF";
+  src: url("/public/fonts/Visby/VisbyCF-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Visby CF Light";
+  src: url("/public//fonts/Visby/VisbyCF-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "Visby CF Bold";
+  src: url("/public/fonts/Visby/VisbyCF-ExtraBold.otf") format("truetype");
+}
+
+body {
+  background-color: #01010d;
+}
+
+.gridCont {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-right: 50px;
+  margin-top: -10px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  max-height: 300px; /* membatasi tampilan maksimum 3 data */
+  max-width: 580px;
+  overflow: auto;
+  margin-bottom: 350px;
+}
+
+/* style custom scrollbar */
+
+.grid-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.grid-container::-webkit-scrollbar-track {
+  background: #01010d;
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #757575, #616161);
+  border-radius: 10px;
+  border: none;
+}
+
+.grid-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.MemberCard {
+  background-color: #01010d;
+  flex-direction: row;
+  display: flex;
+  direction: ltr;
+  margin-left: 50px;
+}
+
+.profileImageCont {
+  border-radius: 200px;
+  width: 70px;
+  height: 70px;
+  border: double 3px transparent;
+  background-image: linear-gradient(#01010d, #01010d), linear-gradient(92.15deg, #009bd8 0.74%, #01dbad 112.37%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 16px 40px rgba(0, 177, 204, 0.3);
+}
+
+.profileMemberImage {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 150px;
+}
+
+.MemberCardName {
+  background: linear-gradient(92.15deg, #009bd8 0.74%, #01dbad 112.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "Syne";
+  width: 280px;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.MemberCardRoleCont {
+  flex-direction: row;
+  display: flex;
+  gap: 2px;
+  margin-top: -34px;
+  margin-left: 20px;
+}
+
+.MemberCardRole {
+  font-family: "Visby CF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.socmedCont {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 15px;
+  left: 620px;
+}
+
+.socmedCont2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 15px;
+  left: 1000px;
+}
+.MemberSectionTittle {
+  justify-content: center;
+  align-items: center;
+}
+.firstTittle {
+  font-family: "Visby CF Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  background: linear-gradient(90.58deg, #00b0cd 0%, #01dbad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+/* Two Color Tittle */
+
+.two-color-text {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #01010d;
+}
+
+.two-color-text span {
+  background: linear-gradient(90.58deg, #00b0cd 0%, #01dbad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: -315px;
+}
+
+.two-color-text:before {
+  content: "Meet Our";
+  color: #ffffff;
+}
+
+.MemberSectionDescCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MemberSectionDesc {
+  font-family: "Visby CF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  width: 1037px;
+}
+.DivisionCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 210px;
+  margin-top: 20px;
+}
+
+.SoftwareDivisionGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  background: linear-gradient(92.15deg, #009bd8 0.74%, #01dbad 112.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.CreativeDivisionGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  background: linear-gradient(92.15deg, #009bd8 0.74%, #01dbad 112.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.SoftwareDivisionDesc {
+  font-family: "Visby CF Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 435px;
+  margin-top: 20px;
+}
+
+.CreativeDivisionDesc {
+  font-family: "Visby CF Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  width: 420px;
+  margin-top: 20px;
+}
+
+.DivisionDescCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+  margin-bottom: 80px;
+}

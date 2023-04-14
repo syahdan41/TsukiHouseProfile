@@ -22,7 +22,7 @@ function FoundingCard({ CardData }) {
   ));
   return (
     <section>
-      <div className="FoundingCardLayout">{CardDataList}</div>
+      <div className="FoundingCardLayout bg">{CardDataList}</div>
     </section>
   );
 }
