@@ -50,12 +50,33 @@ function MemberCard({ SoftwareMemberCardData, MediaCardData }) {
     </div>
   ));
   return (
-    <section>
+    <div>
+      <div>
+        <div className="MemberSectionTittle">
+          <p className="secTittle">OUR TEAMS</p>
+          <div className="two-color-text">
+            Meet Our <span>Unique Talents</span>
+          </div>
+          <div className="MemberSectionDescCont">
+            <p className="MemberSectionDesc">
+              Meet the teams that create our high-quality products. These talented individuals understand their craft, and how their work impacts you. They are good at their jobs, and we believe in rewarding that.
+            </p>
+          </div>
+          <div className="DivisionCont">
+            <div className="SoftwareDivisionGrid">Software House Division</div>
+            <div className="CreativeDivisionGrid">Creative House Division</div>
+          </div>
+          <div className="DivisionDescCont">
+            <div className="SoftwareDivisionDesc">Develop, deliver and support custom-made software applications and services</div>
+            <div className="CreativeDivisionDesc">Produces, manages and distributes content, invests in media-related businesses.</div>
+          </div>
+        </div>
+      </div>
       <div className="gridCont">
         <div className="grid-container">{MediaCardDataList}</div>
         <div className="grid-container">{SoftwareMemberCardDataList}</div>
       </div>
-    </section>
+    </div>
   );
 }
 export default MemberCard;

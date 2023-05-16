@@ -80,37 +80,17 @@ function App() {
   return (
     <div>
       <div>
-        <div className="circle-container">
+        <div className="circle-container-left">
           <div className="circle-1"></div>
+        </div>
+        <div className="circle-container-right">
           <div className="circle-2"></div>
         </div>
-
         <FoundingCard CardData={FounderData} />
       </div>
-      <section>
-        <div className="MemberSectionTittle">
-          <p className="secTittle">OUR TEAMS</p>
-          <div className="two-color-text">
-            Meet Our <span>Unique Talents</span>
-          </div>
-          <div className="MemberSectionDescCont">
-            <p className="MemberSectionDesc">
-              Meet the teams that create our high-quality products. These talented individuals understand their craft, and how their work impacts you. They are good at their jobs, and we believe in rewarding that.
-            </p>
-          </div>
-          <div className="DivisionCont">
-            <div className="SoftwareDivisionGrid">Software House Division</div>
-            <div className="CreativeDivisionGrid">Creative House Division</div>
-          </div>
-          <div className="DivisionDescCont">
-            <div className="SoftwareDivisionDesc">Develop, deliver and support custom-made software applications and services</div>
-            <div className="CreativeDivisionDesc">Produces, manages and distributes content, invests in media-related businesses.</div>
-          </div>
-        </div>
-        <div>
-          <MemberCard SoftwareMemberCardData={SofwareMemberData} MediaCardData={MediaMemberData} />
-        </div>
-      </section>
+      <div>
+        <MemberCard SoftwareMemberCardData={SofwareMemberData} MediaCardData={MediaMemberData} />
+      </div>
     </div>
   );
 }
