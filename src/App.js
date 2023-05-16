@@ -80,8 +80,10 @@ function App() {
   return (
     <div>
       <div>
-        <div className="circle-container">
+        <div className="circle-container-left">
           <div className="circle-1"></div>
+        </div>
+        <div className="circle-container-right">
           <div className="circle-2"></div>
         </div>
         <FoundingCard CardData={FounderData} />
