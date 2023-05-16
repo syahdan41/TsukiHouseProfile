@@ -10,7 +10,9 @@
   font-family: "Visby CF Light";
   src: url("/public//fonts/Visby/VisbyCF-Light.otf") format("truetype");
 }
-
+.border {
+  color: #ffff;
+}
 .FoundingCardLayout {
   display: flex;
   flex-direction: row;
@@ -19,6 +21,19 @@
   gap: 50px;
   margin-top: 80px;
   margin-bottom: 350px;
+}
+.firstTittle {
+  font-family: "Visby CF Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  background: linear-gradient(90.58deg, #00b0cd 0%, #01dbad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: -35px;
 }
 .card {
   background-color: #ffff;
@@ -122,35 +137,80 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
-  margin-left: 81px;
-  margin-right: 81px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .two-color-text2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -35px;
+}
+.firstTxt {
   font-family: "Syne";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 72px;
   text-align: center;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-right: 12px;
 }
-
-.two-color-text2 span {
+.secTxt {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
   background: linear-gradient(92.15deg, #009bd8 0.74%, #01dbad 112.37%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-left: -400px;
 }
 
-.two-color-text2:before {
-  content: "Our Beloved";
-  color: #ffffff;
-}
-.bg {
-  background-image: url("../../Assets/image/Group 265.png"); /* Ganti URL gambar dengan URL gambar yang ingin digunakan */
-  background-position-y: 80px;
-  background-position-x: 180px;
-  background-size: 120%;
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .headingFounding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .two-color-text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstTxt,
+  .secTxt {
+    font-size: 24px;
+    text-align: center;
+  }
+  .secTxt {
+    margin-top: -70px; /* Menyesuaikan margin agar tidak tumpang tindih dengan teks pertama */
+  }
+  .foundingDesc {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .FoundingCardLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstTittle {
+    font-size: 12px;
+  }
+  .CardCont {
+    margin: 1rem 0;
+  }
+  .firstTxt {
+    margin-right: 0px;
+  }
 }

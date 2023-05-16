@@ -80,23 +80,16 @@ function App() {
   return (
     <div>
       <div>
-        <div className="headingFounding">
-          <p className="firstTittle">FOUNDERS</p>
-          <div className="two-color-text2">
-            Our Beloved <span>Founding Members</span>
-          </div>
-          <p className="foundingDesc">
-            Our beloved founding members were the visionaries who paved the way for the establishment of our organization. They were driven by a passion to create something meaningful and impactful that would benefit society in a
-            significant way. Their unwavering commitment, tireless efforts, and countless sacrifices laid the foundation for our success today.
-          </p>
+        <div className="circle-container">
+          <div className="circle-1"></div>
+          <div className="circle-2"></div>
         </div>
-        <div className="bg">
-          <FoundingCard CardData={FounderData} />
-        </div>
+
+        <FoundingCard CardData={FounderData} />
       </div>
       <section>
         <div className="MemberSectionTittle">
-          <p className="firstTittle">OUR TEAMS</p>
+          <p className="secTittle">OUR TEAMS</p>
           <div className="two-color-text">
             Meet Our <span>Unique Talents</span>
           </div>
